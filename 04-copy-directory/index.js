@@ -33,7 +33,7 @@ function copyDir(source, destination) {
   });
 }
 
-// Обработчик события удаления файлов из папки files
+
 fs.watch(sourceDir, (eventType, filename) => {
   if (eventType === 'rename') {
     const sourcePath = path.join(sourceDir, filename);

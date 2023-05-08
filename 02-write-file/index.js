@@ -10,22 +10,6 @@ const rl = readline.createInterface({
 
 console.log('Congratulation! Enter your information:');
 
-// rl.on('line', (input) => {
-//   fs.writeFile(path.join(__dirname, 'info.txt'), input, (err) => {
-//     if (err) {
-//       console.error('Writing error:', err);
-//     } else {
-//       console.log('Information saved!');
-//     }
-//     rl.close();
-//   });
-// });
-
-
-
-
-
-
 
 const writeToOutputFile = (input) => {
   fs.appendFile(path.join(__dirname, 'info.txt'), input + '\n', (err) => {
